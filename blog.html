@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/43029a1a4d.js" crossorigin="anonymous"></script>  
+<body> 
+    
+    <section class="sub-header">
+        <nav>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+          <i class=" fa fa-solid fa-circle-xmark fa-fade" onclick="hidemenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        </div>
+        <i class=" fa fa-solid fa-bars fa-fade" onclick="showmenu()" ></i>
+    </nav>
+    <h1>Our Certificate & online program for 2025</h1>
+    </section>
+       <!-- blog page content -->
+         <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg" alt="">
+                    <h2>Our Certificate & online program for 2025</h2>
+                    <p>In 2025, our university is proud to offer a diverse range of certificate and online programs designed to meet the evolving needs of learners worldwide. 
+                        Our programs are crafted to provide flexibility, accessibility, and high-quality education, empowering students to achieve their personal and professional goals.
+                        Whether you're looking to enhance your skills, switch careers, or pursue a passion, our certificate and online programs offer something for everyone.</p>
+                    <h3>Certificate Programs</h3>
+                    <p>Our certificate programs are designed to provide specialized knowledge and skills in various fields. These programs are ideal for individuals seeking to gain expertise in a specific area without committing to a full degree program. 
+                        Our certificate offerings include:</p>
+                    <ul>
+                        <li>Data Science and Analytics</li>
+                        <li>Digital Marketing</li>
+                        <li>Project Management</li>
+                        <li>Cybersecurity</li>
+                        <li>Graphic Design</li>
+                        <li>Business Administration</li>
+                        <li>Healthcare Management</li>
+                    </ul>
+                    <p>Each certificate program is designed to be completed in a short duration, allowing students to quickly acquire new skills and apply them in their careers.</p>
+                    <h3>Online Programs</h3>
+                    <p>Our online programs offer the same rigorous curriculum and expert instruction as our on-campus courses, but with the added convenience of remote learning. 
+                        Students can access course materials, participate in discussions, and complete assignments from anywhere in the world. 
+                        Our online program offerings include:</p>
+                    <ul>
+                        <li>Bachelor's Degrees in Business, Computer Science, and Education</li>
+                        <li>Master's Degrees in Public Health, Information Technology, and Education Leadership</li>
+                        <li>Professional Development Courses in Leadership, Communication, and Time Management</li>
+                    </ul>
+                    <p>Our online programs are designed to accommodate busy schedules, allowing students to learn at their own pace while balancing work and personal commitments.</p>
+                    <h3>Why Choose Our Programs?</h3>
+                    <p>By enrolling in our certificate and online programs, students benefit from:</p>
+                    <ul>
+                        <li>Expert Faculty: Learn from experienced instructors who are leaders in their fields.</li>
+                        <li>Flexible Learning: Access course materials and complete assignments on your schedule.</li>
+                        <li>Global Community: Connect with peers from around the world and expand your professional network.</li>
+                        <li>Career Advancement: Gain skills that are in high demand and enhance your employability.</li>
+                        <li>Affordable Tuition: Benefit from competitive pricing and financial aid options.</li>
+                    </ul>
+                    <p>In 2025, our university is committed to providing high-quality education that
+                        meets the needs of today's learners. Whether you're looking to earn a certificate or pursue an online degree, our programs are designed to help you succeed in your personal and professional journey.</p>
+                                   
+                      <div class="comment-box">
+                        <h3>leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea rows="5" placeholder="Your Comment" required></textarea>
+                            <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                        </form>
+                      </div>    
+
+
+                  </div>
+
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>15</span> 
+                </div>
+                    <div>
+                        <span>Digital Marketing</span>
+                        <span>31</span>
+                    </div>
+                    <div>
+                        <span>Education</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Graphic Design</span>
+                        <span>14</span>
+                    </div>
+                    <div>
+                        <span>Project Management</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Technology</span>
+                        <span>19</span>
+                    </div>
+
+            </div>
+            </div>
+        </section>
+        <!-- footer----------- -->
+        <section class="footer">
+            <h2 class="about-us">About Us</h2>
+            <p>Heritage University is a prestigious institution committed to excellence in education, research, and community engagement. Our mission is to empower students with the knowledge and skills needed to thrive in a rapidly changing world.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>  
+            <p>Made with <i class="fa fa-heart"></i> by Ayush mahantare</p>
+        </section>
+
+
+
+    
+
+
+
+
+
+
+    <!-- javascript for toggle close and open menu in responsive design -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
